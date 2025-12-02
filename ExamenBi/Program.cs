@@ -5,6 +5,7 @@ namespace ExamenBi
     {
         public static void Main(string[] args)
         {
+            var miConexion = new ConexionDB();
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
