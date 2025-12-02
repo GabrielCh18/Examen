@@ -11,11 +11,11 @@ namespace ExamenBi
         {
             var miConexion = new ConexionDB();
             var builder = WebApplication.CreateBuilder(args);
+
+            var connectionString = builder.Configuration.GetConnectionString("LigaApiContext.sqlserver");
+
             builder.Services.AddDbContext<LigaApiContext>(options =>
-                options.UseMySql(
-                builder.Configuration.GetConnectionString("LigaApiContext"),
-                new MySqlServerVersion(new Version(10, 4, 17))
-                ));
+                options.UseSqlServer(connectionString));
             // Add services to the container.
 
             builder.Services.AddControllers();
