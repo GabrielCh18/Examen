@@ -1,8 +1,10 @@
-﻿namespace ExamenBi.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ExamenBi
 {
     public class Torneo
     {
-        public int Id { get; set; }
+        [Key] public int Id { get; set; }
         public string Nombre { get; set; } = null!;
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }

@@ -1,10 +1,11 @@
 ﻿using ExamenBi.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 
-namespace ExamenBi.Domain.Entities
+namespace ExamenBi
 {
     public class EventoPartido
     {
-        public int Id { get; set; }
+        [Key] public int Id { get; set; }
 
         public int PartidoId { get; set; }
         public Partido Partido { get; set; } = null!;

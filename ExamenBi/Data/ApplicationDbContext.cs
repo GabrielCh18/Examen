@@ -1,6 +1,4 @@
-﻿using ExamenBi.Domain.Entities;
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 
 

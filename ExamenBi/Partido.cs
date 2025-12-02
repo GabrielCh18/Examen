@@ -1,8 +1,10 @@
-﻿namespace ExamenBi.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ExamenBi
 {
     public class Partido
     {
-        public int Id { get; set; }
+        [Key] public int Id { get; set; }
         public DateTime Fecha { get; set; }
         public string Fase { get; set; } = null!; // Grupos, Cuartos, Semis, Final
         public int TorneoId { get; set; }
