@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using ExamenBi.Data;
 
 namespace ExamenBi
 {
@@ -7,7 +11,11 @@ namespace ExamenBi
         {
             var miConexion = new ConexionDB();
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.AddDbContext<LigaApiContext>(options =>
+                options.UseMySql(
+                builder.Configuration.GetConnectionString("LigaApiContext"),
+                new MySqlServerVersion(new Version(10, 4, 17))
+                ));
             // Add services to the container.
 
             builder.Services.AddControllers();

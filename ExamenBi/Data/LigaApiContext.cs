@@ -12,9 +12,7 @@ namespace ExamenBi.Data
         public LigaApiContext (DbContextOptions<LigaApiContext> options)
             : base(options)
         {
+
         }
-        public DbSet<ExamenBi.Goal> Goal { get; set; } = default!;
-        public DbSet<ExamenBi.Card> Card { get; set; } = default!;
-        public DbSet<ExamenBi.Emun.TipoTorneo> TipoTorneo { get; set; } = default!;
     }
 }
