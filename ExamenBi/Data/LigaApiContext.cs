@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ExamenBi.Emun;
-namespace ExamenBi.Data
+using ExamenBi.Domain.Enums;
 
+namespace ExamenBi.Data
 {
     public class LigaApiContext : DbContext
     {
