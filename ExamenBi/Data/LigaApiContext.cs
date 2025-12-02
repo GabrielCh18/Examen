@@ -11,7 +11,6 @@ namespace ExamenBi.Data
         public LigaApiContext (DbContextOptions<LigaApiContext> options)
             : base(options)
         {
-
         }
     }
 }
