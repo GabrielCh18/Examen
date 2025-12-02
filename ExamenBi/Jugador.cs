@@ -8,5 +8,6 @@ namespace ExamenBi
         public string Nombre { get; set; } = null!;
         public int EquipoId { get; set; }
         public Equipo Equipo { get; set; } = null!;
+        public int Goles { get; set; } = 0;
     }
 }
