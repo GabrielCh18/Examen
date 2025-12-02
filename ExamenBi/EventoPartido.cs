@@ -1,4 +1,4 @@
-﻿using ExamenBi.Domain.Enums;
+﻿using ExamenBi.Doiman.Emun;
 using System.ComponentModel.DataAnnotations;
 
 namespace ExamenBi
